@@ -406,9 +406,18 @@ Config.customcolors = {
 // {[userid: string]: avatar url}
 /** @type {{[userid: string]: string}}  */
 Config.avatars = {
-  paaaass: 'https://i.imgur.com/yJlfVub.png',
-  roisian: 'https://i.imgur.com/GG8jEp6.png',
-  tabrigos: 'https://i.imgur.com/yJlfVub.png'
+  sleepless1: "../sprites/trainer/sleepless.gif",
+  alessioarclight: "../sprites/trainer/alessio-arclight.png",
+  hellither: "../sprites/trainer/hellmaster.png",
+  ardeghno: "../sprites/trainer/ardeghno.png",
+  beezlyssa: "../sprites/trainer/beezlyssa.png",
+  allenlumina: "../sprites/trainer/Allen-Lumina",
+  deadblonde: "../sprites/trainer/DeadBlonde.png",
+  harttt___: "../sprites/trainer/Harttt___.png",
+  lentifumè: "../sprites/trainer/Lentifumè.png",
+  pala97: "../sprites/trainer/Pala97.png",
+  xyukichii: "../sprites/trainer/Xyukichii.png",
+  roisian: "../sprites/trainer/roisian.png"
   
   
 }

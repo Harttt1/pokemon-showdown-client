@@ -463,8 +463,16 @@
 			var avatar = app.user.get('avatar');
 			var settings = app.user.get('settings');
 
+
+			if (avatar) {
+                var src = Dex.resolveAvatar(avatar)
+                var custom = Config.avatars[app.user.get('userid')];
+                if (custom) {
+                    src = custom;
+                }			
+			}
 			var buf = '';
-			buf += '<p>' + (avatar ? '<img class="trainersprite" src="' + Dex.resolveAvatar(avatar) + '" width="40" height="40" style="vertical-align:middle;cursor:pointer" />' : '') + '<strong>' + BattleLog.escapeHTML(name) + '</strong></p>';
+			buf += '<p>' + (avatar ? '<img class="trainersprite" src="' + src + '" style="vertical-align:middle;cursor:pointer" />' : '') + '<strong>' + BattleLog.escapeHTML(name) + '</strong></p>';
 			buf += '<p><button name="avatars">Change avatar</button></p>';
 			if (app.user.get('named')) {
 				var registered = app.user.get('registered');
