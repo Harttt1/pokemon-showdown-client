@@ -2636,14 +2636,34 @@ function toId() {
 
 			var buf = '<div class="userdetails">';
 			
-			if (avatar) {
-                var src = Dex.resolveAvatar(avatar)
+		/**	if (avatar) {
+               var src = Dex.resolveAvatar(avatar)
                 var custom = Config.avatars[userid];
                 if (custom) {
                     src = custom;
                 }
-                buf += '<img class="trainersprite' + (userid === ownUserid ? ' yours' : '') + '" src="' + src + '" />';
-            }	
+          }		 */
+		  
+			
+			if (avatar) {
+                var src = Dex.resolveAvatar(avatar);
+                var custom = Config.replace[avatar];
+                if (custom) {
+                    src = custom;
+                }
+          }
+			
+		  
+		  
+		  
+		  
+			console.log('tipo di avatar ' + typeof avatar);
+		  
+		  
+		  
+		  
+            buf += '<img class="trainersprite' + (userid === ownUserid ? ' yours' : '') + '" src="' + src + '" />';
+	
 			buf += '<strong><a href="//' + Config.routes.users + '/' + userid + '" target="_blank">' + BattleLog.escapeHTML(name) + '</a></strong><br />';
 			var offline = data.rooms === false;
 			if (data.status || offline) {

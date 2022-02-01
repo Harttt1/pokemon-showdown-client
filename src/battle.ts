@@ -1,5 +1,5 @@
 /**
- * Pokemon Showdown Battle
+ * Pokemon Showdown Battlea
  *
  * This is the main file for handling battle animations
  *

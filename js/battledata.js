@@ -1032,7 +1032,6 @@ global.toID=toID;
 
 
 
-
 var BattleNatures={
 Adamant:{
 plus:'atk',

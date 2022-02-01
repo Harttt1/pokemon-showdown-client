@@ -685,13 +685,21 @@ pokemonhtml+="<span"+tooltipCode+" style=\""+Dex.getPokemonIcon(poke,!side.isFar
 if(_i5%3===2)pokemonhtml+="</div><div class=\"teamicons\">";
 }
 
-			if (side.avatar) {
+		/**	if (side.avatar) {
                 var src = Dex.resolveAvatar(side.avatar)
                 var custom = Config.avatars[side.name];
                 if (custom) {
                     src = custom;
                 }			
-			}
+			}*/
+			
+			if (side.avatar) {
+                var src = Dex.resolveAvatar(side.avatar)
+                var custom = Config.replace[side.avatar];
+                if (custom) {
+                    src = custom;
+                }
+			}		
 
 pokemonhtml='<div class="teamicons">'+pokemonhtml+'</div>';
 var ratinghtml=side.rating?" title=\"Rating: "+BattleLog.escapeHTML(side.rating)+"\"":"";

@@ -3240,7 +3240,7 @@ a.ilink.yours {
 .avatarlist button {
 	width: 80px;
 	height: 80px;
-	background: transparent url(https://cdn.discordapp.com/attachments/828312208266100747/933870526814887956/Senza_titolo-5.png) no-repeat scroll 0px 0px;
+	background: transparent url("../sprites/trainer/spritesheet/spritesheet.png") no-repeat scroll 0px 0px;
 }
 .bglist button span {
 	display: block;

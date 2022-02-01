@@ -464,13 +464,25 @@
 			var settings = app.user.get('settings');
 
 
-			if (avatar) {
+	/**		if (avatar) {
                 var src = Dex.resolveAvatar(avatar)
                 var custom = Config.avatars[app.user.get('userid')];
                 if (custom) {
                     src = custom;
                 }			
-			}
+			} */
+			
+			
+			if (avatar) {
+                var src = Dex.resolveAvatar(avatar)
+                var custom = Config.replace[avatar];
+                if (custom) {
+                    src = custom;
+                }
+			}	
+						
+						
+						
 			var buf = '';
 			buf += '<p>' + (avatar ? '<img class="trainersprite" src="' + src + '" style="vertical-align:middle;cursor:pointer" />' : '') + '<strong>' + BattleLog.escapeHTML(name) + '</strong></p>';
 			buf += '<p><button name="avatars">Change avatar</button></p>';

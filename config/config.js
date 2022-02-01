@@ -403,21 +403,46 @@ Config.customcolors = {
 	'cathy': '' //{color: '#ff5cb6'}
 };
 
+// {[avatar: string]: avatar url}
+/** @type {{[avatar: string]: string}}  */
+Config.replace = {
+	
+	"lucas": "../sprites/trainer/november.png",
+	"dawn": "../sprites/trainer/Harttt___.png",
+	"youngster-gen4dp": "../sprites/trainer/DeadBlonde.png",
+	"lass-gen4dp": "../sprites/trainer/beezlyssa.png",
+	"camper": "../sprites/trainer/Sd.Domini.pkmn.png",
+	"picnicker": "../sprites/trainer/Allen-Lumina.png",
+	"bugcatcher-gen4dp": "../sprites/trainer/alessio-arclight.png",
+	"aromalady": "../sprites/trainer/Xyukichii.png",
+	"twins-gen4dp": "../sprites/trainer/ardeghno.png",
+	"hiker-gen4": "../sprites/trainer/sleepless.png",
+	"battlegirl-gen4": "../sprites/trainer/roisian.png",
+	"fisherman-gen4": "../sprites/trainer/rayne.png",
+	"cyclist-gen4": "../sprites/trainer/Pala97.png",
+	"cyclistf-gen4": "../sprites/trainer/Lentifumè.png",
+	"blackbelt-gen4dp": "../sprites/trainer/hellmaster.png",
+	"artist-gen4": "../sprites/trainer/gambler_2.png",
+	"pokemonbreeder-gen4":"../sprites/trainer/Manuel_Yakitsuke.png",
+	"pokemonbreederf-gen4":"../sprites/trainer/Toby.png",
+	"cowgirl":"../sprites/trainer/andrea.png",
+	"jogger":"../sprites/trainer/mattex.png",
+	"pokefan-gen4":"../sprites/trainer/ShinyMoon.png",
+	"pokefanf-gen4":"../sprites/trainer/robadibraian.png",
+	"pokekid":"../sprites/trainer/Light.png",
+	"youngcouple-gen4dp":"../sprites/trainer/clodcast.png"
+	
+}
+
+
+
+
+
 // {[userid: string]: avatar url}
 /** @type {{[userid: string]: string}}  */
 Config.avatars = {
-  sleepless1: "../sprites/trainer/sleepless.gif",
-  alessioarclight: "../sprites/trainer/alessio-arclight.png",
-  hellither: "../sprites/trainer/hellmaster.png",
-  ardeghno: "../sprites/trainer/ardeghno.png",
-  beezlyssa: "../sprites/trainer/beezlyssa.png",
-  allenlumina: "../sprites/trainer/Allen-Lumina",
-  deadblonde: "../sprites/trainer/DeadBlonde.png",
-  harttt___: "../sprites/trainer/Harttt___.png",
-  lentifumè: "../sprites/trainer/Lentifumè.png",
-  pala97: "../sprites/trainer/Pala97.png",
-  xyukichii: "../sprites/trainer/Xyukichii.png",
-  roisian: "../sprites/trainer/roisian.png"
+  paaaass: "../sprites/trainer/Pala97.png",
+
   
   
 }
