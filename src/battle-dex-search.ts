@@ -10,7 +10,6 @@
  * @author Guangcong Luo <guangcongluo@gmail.com>
  * @license MIT
  */
-
 type SearchType = (
 	'pokemon' | 'type' | 'tier' | 'move' | 'item' | 'ability' | 'egggroup' | 'category' | 'article'
 );
